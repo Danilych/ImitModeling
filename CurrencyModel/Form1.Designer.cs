@@ -161,14 +161,14 @@
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.IsValueShownAsLabel = true;
-            series1.LabelFormat = "###.###";
+            series1.LabelFormat = "C";
             series1.Legend = "Legend1";
             series1.Name = "Euro";
             series2.BorderWidth = 3;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.IsValueShownAsLabel = true;
-            series2.LabelFormat = "###.###";
+            series2.LabelFormat = "C";
             series2.Legend = "Legend1";
             series2.Name = "$";
             this.chart1.Series.Add(series1);

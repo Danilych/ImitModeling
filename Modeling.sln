@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31410.357
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneModel", "PlaneModel\PlaneModel.csproj", "{A735ED5E-68B6-4777-9C2A-632DA03BD88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyModel", "CurrencyModel\CurrencyModel.csproj", "{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A735ED5E-68B6-4777-9C2A-632DA03BD88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A735ED5E-68B6-4777-9C2A-632DA03BD88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A735ED5E-68B6-4777-9C2A-632DA03BD88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

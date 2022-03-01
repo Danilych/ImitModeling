@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneModel", "PlaneModel\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyModel", "CurrencyModel\CurrencyModel.csproj", "{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CellRowModel", "CellRowModel\CellRowModel.csproj", "{57620B95-E1A6-4962-B0CE-3C331EF88611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95F66F04-6D3F-43A1-87C2-BDBCB82B7125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57620B95-E1A6-4962-B0CE-3C331EF88611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57620B95-E1A6-4962-B0CE-3C331EF88611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57620B95-E1A6-4962-B0CE-3C331EF88611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57620B95-E1A6-4962-B0CE-3C331EF88611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

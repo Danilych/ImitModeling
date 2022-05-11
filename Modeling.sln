@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CellLifeModel", "CellLifeMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random8", "Random8\Random8.csproj", "{748580DA-C45F-4C72-A454-3691C9FCE3C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Random9", "Random9\Random9.csproj", "{55279409-F545-4A2C-AEAC-04B41833E25F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{748580DA-C45F-4C72-A454-3691C9FCE3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{748580DA-C45F-4C72-A454-3691C9FCE3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{748580DA-C45F-4C72-A454-3691C9FCE3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55279409-F545-4A2C-AEAC-04B41833E25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55279409-F545-4A2C-AEAC-04B41833E25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55279409-F545-4A2C-AEAC-04B41833E25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55279409-F545-4A2C-AEAC-04B41833E25F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

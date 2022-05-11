@@ -161,9 +161,17 @@ namespace Random8
             lbChi.SelectionColor = Color.Black;
             lbChi.AppendText("Chi-squared: ");
             lbChi.AppendText(String.Format("{0:N2} > {1:N2}  is ", bigX, chiTable[rowsCount - 2]));
-            if(isBigger) lbChi.SelectionColor = Color.Red;
-            else lbChi.SelectionColor = Color.Green;
-            lbChi.AppendText("true");
+            if (isBigger)
+            {
+                lbChi.SelectionColor = Color.Red;
+                lbChi.AppendText("true");
+            }
+            else
+            {
+                lbChi.SelectionColor = Color.Green;
+                lbChi.AppendText("false");
+            }
+            
         }
 
         private void dgvProbData_CellValueChanged(object sender, DataGridViewCellEventArgs e)

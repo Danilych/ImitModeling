@@ -35,6 +35,9 @@ namespace Random8
             {
                 commandsMediumGoals[i] = Convert.ToDouble(dgvProbData.Rows[i].Cells[1].Value);
                 dgvProbData.Rows[i].Cells[2].Value = 0;
+                dgvProbData.Rows[i].Cells[3].Value = 0;
+                dgvProbData.Rows[i].Cells[4].Value = 0;
+                dgvProbData.Rows[i].Cells[5].Value = 0;
             }
 
             //Stages start
@@ -75,19 +78,32 @@ namespace Random8
                             if (S >= -commandsMediumGoals[k]) rightTeamGoalsAmount++;
                         }
 
-                        int leftTeamPoints = Convert.ToInt32(dgvProbData.Rows[j].Cells[2].Value);
-                        int rightTeamPoints = Convert.ToInt32(dgvProbData.Rows[k].Cells[2].Value);
+                        int leftTeamPoints = Convert.ToInt32(dgvProbData.Rows[j].Cells[5].Value);
+                        int rightTeamPoints = Convert.ToInt32(dgvProbData.Rows[k].Cells[5].Value);
 
-                        if (leftTeamGoalsAmount > rightTeamGoalsAmount) leftTeamPoints += 3;
-                        else if (rightTeamGoalsAmount > leftTeamGoalsAmount) rightTeamPoints += 3;
-                        else if(leftTeamGoalsAmount == rightTeamGoalsAmount)
+                        if (leftTeamGoalsAmount > rightTeamGoalsAmount)
+                        {
+                            leftTeamPoints += 3;
+                            dgvProbData.Rows[j].Cells[2].Value = Convert.ToInt32(dgvProbData.Rows[j].Cells[2].Value) + 1;
+                            dgvProbData.Rows[k].Cells[3].Value = Convert.ToInt32(dgvProbData.Rows[k].Cells[3].Value) + 1;
+                        }
+                        else if (rightTeamGoalsAmount > leftTeamGoalsAmount)
+                        {
+                            rightTeamPoints += 3;
+                            dgvProbData.Rows[j].Cells[3].Value = Convert.ToInt32(dgvProbData.Rows[j].Cells[3].Value) + 1;
+                            dgvProbData.Rows[k].Cells[2].Value = Convert.ToInt32(dgvProbData.Rows[k].Cells[2].Value) + 1;
+                        }
+                        else if (leftTeamGoalsAmount == rightTeamGoalsAmount)
                         {
                             leftTeamPoints++;
                             rightTeamPoints++;
+
+                            dgvProbData.Rows[j].Cells[4].Value = Convert.ToInt32(dgvProbData.Rows[j].Cells[4].Value) + 1;
+                            dgvProbData.Rows[k].Cells[4].Value = Convert.ToInt32(dgvProbData.Rows[k].Cells[4].Value) + 1;
                         }
 
-                        dgvProbData.Rows[j].Cells[2].Value = leftTeamPoints;
-                        dgvProbData.Rows[k].Cells[2].Value = rightTeamPoints;
+                        dgvProbData.Rows[j].Cells[5].Value = leftTeamPoints;
+                        dgvProbData.Rows[k].Cells[5].Value = rightTeamPoints;
                     }
                 }
             }

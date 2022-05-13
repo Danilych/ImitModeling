@@ -33,6 +33,9 @@
             this.dgvProbData = new System.Windows.Forms.DataGridView();
             this.clmName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmGoals = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmWins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmLose = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmDraw = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmPoints = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProbData)).BeginInit();
             this.SuspendLayout();
@@ -43,16 +46,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTrialsLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbTrialsLog.Location = new System.Drawing.Point(391, 280);
+            this.lbTrialsLog.Location = new System.Drawing.Point(612, 280);
             this.lbTrialsLog.Name = "lbTrialsLog";
-            this.lbTrialsLog.Size = new System.Drawing.Size(185, 200);
+            this.lbTrialsLog.Size = new System.Drawing.Size(177, 200);
             this.lbTrialsLog.TabIndex = 4;
             this.lbTrialsLog.Text = "Ожидание старта";
             // 
             // btnTrialsStart
             // 
             this.btnTrialsStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnTrialsStart.Location = new System.Drawing.Point(391, 12);
+            this.btnTrialsStart.Location = new System.Drawing.Point(612, 12);
             this.btnTrialsStart.Name = "btnTrialsStart";
             this.btnTrialsStart.Size = new System.Drawing.Size(185, 30);
             this.btnTrialsStart.TabIndex = 3;
@@ -68,10 +71,13 @@
             this.dgvProbData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmName,
             this.clmGoals,
+            this.clmWins,
+            this.clmLose,
+            this.clmDraw,
             this.clmPoints});
             this.dgvProbData.Location = new System.Drawing.Point(12, 12);
             this.dgvProbData.Name = "dgvProbData";
-            this.dgvProbData.Size = new System.Drawing.Size(344, 468);
+            this.dgvProbData.Size = new System.Drawing.Size(594, 468);
             this.dgvProbData.TabIndex = 0;
             // 
             // clmName
@@ -83,20 +89,42 @@
             // clmGoals
             // 
             this.clmGoals.HeaderText = "Среднее количество голов";
+            this.clmGoals.MaxInputLength = 3;
             this.clmGoals.Name = "clmGoals";
+            // 
+            // clmWins
+            // 
+            this.clmWins.HeaderText = "Побед";
+            this.clmWins.Name = "clmWins";
+            this.clmWins.ReadOnly = true;
+            this.clmWins.Width = 75;
+            // 
+            // clmLose
+            // 
+            this.clmLose.HeaderText = "Поражений";
+            this.clmLose.Name = "clmLose";
+            this.clmLose.ReadOnly = true;
+            this.clmLose.Width = 75;
+            // 
+            // clmDraw
+            // 
+            this.clmDraw.HeaderText = "Ничей";
+            this.clmDraw.Name = "clmDraw";
+            this.clmDraw.ReadOnly = true;
+            this.clmDraw.Width = 75;
             // 
             // clmPoints
             // 
             this.clmPoints.HeaderText = "Очки";
             this.clmPoints.Name = "clmPoints";
             this.clmPoints.ReadOnly = true;
-            this.clmPoints.Width = 50;
+            this.clmPoints.Width = 75;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 492);
+            this.ClientSize = new System.Drawing.Size(801, 492);
             this.Controls.Add(this.lbTrialsLog);
             this.Controls.Add(this.btnTrialsStart);
             this.Controls.Add(this.dgvProbData);
@@ -115,6 +143,9 @@
         private System.Windows.Forms.Button btnTrialsStart;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmName;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmGoals;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmWins;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmLose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmDraw;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmPoints;
     }
 }
